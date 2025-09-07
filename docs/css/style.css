@@ -2,6 +2,7 @@ body {
   font-family: "Cardo", serif;
   color: purple;
   font-weight: 700;
+  margin: 0;
 }
 
 /****************   Nav Section **********************/
@@ -10,7 +11,6 @@ nav {
   display: flex;
   justify-content: space-between;
   padding: 7px;
-  border-radius: 8px;
 }
 
 nav a {
@@ -29,12 +29,11 @@ footer {
   display: flex;
   justify-content: center;
   padding: 10px;
-  border-radius: 8px;
 }
 
 footer a {
-color: purple;
-text-decoration: none;
+  color: purple;
+  text-decoration: none;
 }
 
 footer a:hover {
@@ -68,7 +67,6 @@ header img {
 }
 
 .tagline {
-  background-color: #d3cce6;
   font-family: "Cardo", serif;
   color: purple;
   font-weight: 700;
@@ -79,7 +77,11 @@ header img {
 
 /************* Sections ********************/
 hr {
-
+  border: none;
+	height: 1px;
+	background: #d3cce6;
+	margin: 16px auto;
+	max-width: 1000px;
 }
 
 section h3 {
@@ -96,7 +98,7 @@ section dl {
   border: 2px double purple;
   border-radius: 5px;
   padding: 8px;
-  justify-self: start; /* Makes background color only go up to the text*/
+  justify-self: start;
   justify-content: center;
   margin: 0 auto;
 }
