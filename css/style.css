@@ -1,0 +1,209 @@
+body {
+  font-family: "Cardo", serif;
+  color: purple;
+  font-weight: 700;
+}
+
+/****************   Nav Section **********************/
+nav {
+	background-color: #d3cce6;
+  display: flex;
+  justify-content: space-between;
+  padding: 7px;
+  border-radius: 8px;
+}
+
+nav a {
+  color: purple;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/***********************  Footer Section   **************************/
+footer {
+	background-color: #d3cce6;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+footer a {
+color: purple;
+text-decoration: none;
+}
+
+footer a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/*********** Splash Page ************************/
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header h1 {
+  font-family: "Alata", sans-serif;
+  font-weight: 700;
+  color: purple;
+}
+
+header img {
+  border-radius: 10em;
+}
+
+.address {
+  text-align: center;
+  font-family: "Cardo", serif;
+  color: purple;
+  font-weight: 700;
+}
+
+.tagline {
+  background-color: #d3cce6;
+  font-family: "Cardo", serif;
+  color: purple;
+  font-weight: 700;
+  text-align: center;
+  font-size: large;
+  border-radius: 8px;
+}
+
+/************* Sections ********************/
+hr {
+
+}
+
+section h3 {
+  font-family: "Alata", sans-serif;
+  text-align: center;
+  margin: 30px;
+  color: purple;
+}
+
+section dl {
+  display: grid;
+  gap: 8px;
+  background-color: #d3cce6;
+  border: 2px double purple;
+  border-radius: 5px;
+  padding: 8px;
+  justify-self: start; /* Makes background color only go up to the text*/
+  justify-content: center;
+  margin: 0 auto;
+}
+
+section ul {
+  list-style: none;
+  padding: 0;
+  width: fit-content;
+  margin: 0 auto;
+}
+
+section li::before {
+  content: "🟪";
+  margin-right: 8px;
+}
+
+section a {
+  color: purple;
+  text-decoration: none;
+}
+
+section a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/**************   Projects   *****************/
+.three-col {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr;
+  gap: 5rem;
+  padding: 20px;
+  margin-bottom: 50px;
+}
+
+.card img {
+  border-radius: 8px;
+  border: purple 2px solid;
+  align-items: center;
+}
+
+.card {
+  text-align: center;
+  border: 2px double purple;
+  background-color: #d3cce6;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0.5,0.5,0.5,0.5);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0.5,0.5,0.5,0.5);
+}
+
+/**************   Responsiveness   *****************/
+@media (max-width: 680px) {
+
+    nav {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 15px 0;
+    }
+
+    .three-col {
+      display: grid;
+      grid-template-columns: 1fr;
+      justify-items: center;
+      gap: 2rem;
+      padding: 10px 0;
+      margin-bottom: 30px;
+    }
+    .three-col .card {
+      width: 90vw;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+}
+
+/**************   Contact Page   *****************/
+.one-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+input {
+  margin: 15px;
+  border: #d3cce6 solid 5px;
+  border-radius: 5px;
+  min-width: 200px;
+}
+
+textarea {
+   min-width: 500px;
+   min-height: 100px;
+   margin: 15px;
+   border: #d3cce6 solid 5px;
+   border-radius: 5px;
+}
+
+h1 {
+  font-family: "Alata", sans-serif;
+  font-weight: 700;
+  color: purple;
+  text-align: center;
+}
